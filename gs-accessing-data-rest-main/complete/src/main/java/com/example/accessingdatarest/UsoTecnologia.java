@@ -1,15 +1,12 @@
-package RED.ARCANE;
+package com.example.accessingdatarest;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
-import java.time.LocalDate;
-import java.util.Date;
-
 @Entity
-public class Afiliacion {
+public class UsoTecnologia {
     @Id
     @GeneratedValue
     private Long id;
@@ -18,10 +15,7 @@ public class Afiliacion {
     private Personaje personaje;
 
     @ManyToOne
-    private Organizacion organizacion;
-
-    private String rol;
-    private Date fechaIngreso;
+    private Tecnologia tecnologia;
 }
 
 

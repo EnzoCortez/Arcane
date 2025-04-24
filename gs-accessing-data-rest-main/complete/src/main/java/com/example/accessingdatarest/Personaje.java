@@ -1,12 +1,8 @@
-package RED.ARCANE;
-
-import org.springframework.web.bind.annotation.CrossOrigin;
+package com.example.accessingdatarest;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-
-import java.util.List;
 
 @Entity
 public class Personaje {

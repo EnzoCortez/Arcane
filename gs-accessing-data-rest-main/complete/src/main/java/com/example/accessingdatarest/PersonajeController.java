@@ -1,4 +1,4 @@
-package RED.ARCANE;
+package com.example.accessingdatarest;
 
 
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -9,15 +9,14 @@ import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*")
-@RestController
-@RequestMapping("/api/personajes")
+@RequestMapping("/api/personaje")
 public class PersonajeController {
 
     @Autowired
     private PersonajeRepository personajeRepository;
 
     // GET: Obtener todos los personajes
-    @GetMapping
+    @GetMapping("/all")
     public List<Personaje> getAllPersonajes() {
         return personajeRepository.findAll();
     }

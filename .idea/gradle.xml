@@ -5,6 +5,11 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/gs-accessing-data-rest-main/complete" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gs-accessing-data-rest-main/complete" />
+          </set>
+        </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/gs-accessing-data-rest-main/initial" />

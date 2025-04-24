@@ -1,17 +1,15 @@
-package RED.ARCANE;
+package com.example.accessingdatarest;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-import java.util.List;
-
 @Entity
-public class Organizacion {
+public class Tecnologia {
     @Id
-    private Long idOrganizacion;
+    private Long idTecnologia;
     private String nombre;
-    private String ciudadBase;
     private String tipo;
+    private String descripcion;
 }
 
 

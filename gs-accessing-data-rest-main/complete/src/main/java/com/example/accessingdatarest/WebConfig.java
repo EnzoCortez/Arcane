@@ -1,4 +1,4 @@
-package RED.ARCANE;
+package com.example.accessingdatarest;
 
 
 import org.springframework.context.annotation.Bean;
