@@ -1,17 +1,32 @@
 package com.example.accessingdatarest;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 
 @Entity
 public class Personaje {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idPersonaje;
+
     private String nombre;
     private String origen;
     private String rol;
     private String alineacion;
+
+    public Personaje(Long idPersonaje, String nombre, String origen, String rol, String alineacion) {
+        this.idPersonaje = idPersonaje;
+        this.nombre = nombre;
+        this.origen = origen;
+        this.rol = rol;
+        this.alineacion = alineacion;
+    }
+
+    public Personaje() {
+    }
 
     public Long getIdPersonaje() {
         return idPersonaje;

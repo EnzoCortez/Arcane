@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/personaje")
 public class PersonajeController {
